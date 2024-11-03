@@ -1,0 +1,25 @@
+{
+  "name": "fletiszimovies",
+  "version": "1.0.0",
+  "description": "Este projeto tem como objetivo explorar e desafiar suas habilidades no desenvolvimento e consumo de APIs. Ele realiza buscas em um servidor que armazena uma lista de filmes, proporcionando acesso a sinopses detalhadas e informações adicionais sobre cada título.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FletisZi/FletisZiMovies.git"
+  },
+  "author": "FletisZi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FletisZi/FletisZiMovies/issues"
+  },
+  "homepage": "https://github.com/FletisZi/FletisZiMovies#readme",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

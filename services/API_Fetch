@@ -1,0 +1,10 @@
+const API_URL = "https://www.omdbapi.com/";
+const API_KEY = "bc1fe9b5";
+
+async function getMovies(trend, page) {
+  const URL = `${API_URL}?apiKey=${API_KEY}&s=${trend}&page=${page}`;
+  const responseJson = await fetch(URL);
+  return await responseJson.json();
+}
+
+export default getMovies;
