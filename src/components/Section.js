@@ -7,7 +7,7 @@ function Section({ valor }) {
   return (
     <section>
       {valor.map((e, index) => (
-        <Card title={e.Title} />
+        <Card title={e.Title} poster={e.Poster}/>
         // <div key={index}>{e.Title}</div> // Renderiza o título de cada elemento
       ))}
     </section>
