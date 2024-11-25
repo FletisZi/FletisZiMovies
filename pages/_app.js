@@ -5,15 +5,27 @@ import "../src/styles/card.css";
 import "../src/styles/header.css";
 import Section from "../src/components/Section";
 
+
 function App({ Component, pageProps }) {
   const [movies, setMovies] = React.useState("");
-  console.log(movies.Search);
+  const [pages, setPages] = React.useState("1");
+
+  // console.log(movies.Search);
 
   return (
     <>
-      <Header movies={movies} setMovies={setMovies} />
+      <Header
+        movies={movies}
+        setMovies={setMovies}
+        pages={pages}
+        setPage={setPages}
+      />
       <Component {...pageProps} />
-      <Section valor={movies.Search} />
+      <Section
+        valor={movies.Search}
+        pageValue={pages}
+        setPageValue={setPages}
+      />
     </>
   );
 }
